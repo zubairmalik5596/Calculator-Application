@@ -4,26 +4,29 @@ body
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: blue;
+    background:black;
 }
 .calculator
 {
-    border: 2px solid green;
+    
     height: 80vh;
     width: 350px;
     padding: 20px;
     border-radius: 10px;
     border-style: dashed;
-    background-color: aqua;
+    box-shadow: 0px 0px 10px white;
     
 }
 #result
 {
     width: 300px;
-    height: 40px;
+    height: 80px;
     margin: 10px;
     border-radius: 10px;
     background: transparent;
+    margin-top: -25%;
+    color: greenyellow;
+    padding-left: 10px;
 
 }
 .keypad
@@ -38,12 +41,15 @@ button
     width: 60px;
     height: 60px;
     border-radius: 100%;
-    background: rgb(9, 180, 46);
+    background: transparent;
+    border: none;
     font-size: 20px;
     font-weight: bold;
     outline: none;
-    border-style: double;
-    border-width: 5px;
+    box-shadow: 0px 0px 3px 1px white;
+    margin: 5px;
+    color: aliceblue;
+   
 }
 button:hover
 {
@@ -53,6 +59,7 @@ button:hover
 button:focus{
     background: white;
     border-color: rgb(119, 0, 255);
+    color: blue;
 }
 .btn2
 {
@@ -68,6 +75,7 @@ footer{
     color: antiquewhite;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
+    
 }
 footer span
 {
@@ -75,6 +83,7 @@ footer span
     color: rgb(210, 242, 5);
     font-family: sans-serif;
 }
+
 @media screen and (max-width:300px) {
     .calculator{
         width: 300px;
@@ -83,7 +92,8 @@ footer span
     }
     .keypad
     {
-        margin-left: 20px;
+        margin-left: -10%;
+        justify-content: center;
     
     }
     footer span
@@ -105,7 +115,7 @@ footer span
     }
     .keypad
     {
-        margin-left: 20px;
+        margin-left: 3px;
         grid-gap: 10px;
     
     }
@@ -120,3 +130,27 @@ footer span
     }
     
 }
+@media screen and (max-width:500px) {
+    .calculator{
+        width: 300px;
+        
+        
+    }
+    .keypad
+    {
+        margin-left: 3px;
+        grid-gap: 10px;
+    
+    }
+    footer span
+    {
+        font-size: 15px;
+    }
+    footer
+    {
+        margin-top: -15%;
+        margin-left: 12px;
+    }
+    
+}
+
